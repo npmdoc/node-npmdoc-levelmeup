@@ -1,0 +1,626 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/workshopper/levelmeup#readme"
+
+    >levelmeup (v1.0.0)</a>
+</h1>
+<h4>Level Me Up Scotty! An intro to Node.js databases via a set of self-guided workshops.</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.levelmeup">module levelmeup</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.levelmeup.exercise">
+            function <span class="apidocSignatureSpan">levelmeup.</span>exercise
+            <span class="apidocSignatureSpan">(opt)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.levelmeup.formatDiff">
+            function <span class="apidocSignatureSpan">levelmeup.</span>formatDiff
+            <span class="apidocSignatureSpan">(diffs)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.levelmeup.generate">
+            function <span class="apidocSignatureSpan">levelmeup.</span>generate
+            <span class="apidocSignatureSpan">(i)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.levelmeup.gibberish">
+            function <span class="apidocSignatureSpan">levelmeup.</span>gibberish
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.levelmeup.read_db">
+            function <span class="apidocSignatureSpan">levelmeup.</span>read_db
+            <span class="apidocSignatureSpan">(dir, valueEncoding, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan"></span>levelmeup</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.levelmeup.exercise">module levelmeup.exercise</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.levelmeup.exercise.exercise">
+            function <span class="apidocSignatureSpan">levelmeup.</span>exercise
+            <span class="apidocSignatureSpan">(opt)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.levelmeup.formatDiff">module levelmeup.formatDiff</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.levelmeup.formatDiff.formatDiff">
+            function <span class="apidocSignatureSpan">levelmeup.</span>formatDiff
+            <span class="apidocSignatureSpan">(diffs)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.levelmeup.generate">module levelmeup.generate</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.levelmeup.generate.generate">
+            function <span class="apidocSignatureSpan">levelmeup.</span>generate
+            <span class="apidocSignatureSpan">(i)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.levelmeup.gibberish">module levelmeup.gibberish</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.levelmeup.gibberish.gibberish">
+            function <span class="apidocSignatureSpan">levelmeup.</span>gibberish
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.levelmeup.levelmeup">module levelmeup.levelmeup</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.levelmeup.levelmeup.__">
+            function <span class="apidocSignatureSpan">levelmeup.levelmeup.</span>__
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.levelmeup.levelmeup.__n">
+            function <span class="apidocSignatureSpan">levelmeup.levelmeup.</span>__n
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">levelmeup.levelmeup.</span>_eventsCount</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">levelmeup.levelmeup.</span>_events</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">levelmeup.levelmeup.</span>_meta</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">levelmeup.levelmeup.</span>appStorage</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">levelmeup.levelmeup.</span>cli</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">levelmeup.levelmeup.</span>domain</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">levelmeup.levelmeup.</span>exercises</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">levelmeup.levelmeup.</span>i18n</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">levelmeup.levelmeup.</span>options</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.levelmeup.read_db">module levelmeup.read_db</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.levelmeup.read_db.read_db">
+            function <span class="apidocSignatureSpan">levelmeup.</span>read_db
+            <span class="apidocSignatureSpan">(dir, valueEncoding, callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.levelmeup" id="apidoc.module.levelmeup">module levelmeup</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.levelmeup.exercise" id="apidoc.element.levelmeup.exercise">
+        function <span class="apidocSignatureSpan">levelmeup.</span>exercise
+        <span class="apidocSignatureSpan">(opt)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">exercise = function (opt) {
+  return {
+    problem: {
+      file: path.join(opt.dir, &#x27;problem.{lang}.md&#x27;)
+    },
+    solution: {
+      file: path.join(opt.dir, &#x27;solution.js&#x27;),
+      type: &#x27;js&#x27;
+    },
+    verify: function (args, callback) {
+      var cmd = opt.init()
+      var finish = function (err) {
+        if (err) {
+          callback(null, false, err)
+        }
+        callback(null, true)
+      }
+      exec(cmd, path.join(opt.dir, &#x27;solution.js&#x27;), function (err, data) {
+        if (err) {
+          return finish(&#x27;Error in this workshopper!\n\n```\n&#x27; + err.stack + &#x27;\n```&#x27;)
+        }
+        exec(cmd, path.resolve(process.cwd(), args[0]), function (err, data2) {
+          if (err) {
+            return finish(&#x27;```\n&#x27; + err.stack + &#x27;\n```&#x27;)
+          }
+          var diffs = deepDiff(data, data2)
+          if (diffs === undefined) {
+            return finish()
+          }
+          try {
+            finish(&#x27;{error.not_same}:\n&#x27; + formatDiff(diffs))
+          } catch (e) {
+            console.log(e)
+          }
+        })
+      })
+    },
+    run: function (args, callback) {
+      var cmd = opt.init()
+      exec(cmd, path.resolve(process.cwd(), args[0]), function (err, data) {
+        if (err) {
+          return callback(err, false)
+        }
+        console.log(JSON.stringify(data, null, 2))
+        callback(null, true)
+      })
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.levelmeup.formatDiff" id="apidoc.element.levelmeup.formatDiff">
+        function <span class="apidocSignatureSpan">levelmeup.</span>formatDiff
+        <span class="apidocSignatureSpan">(diffs)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">formatDiff = function (diffs) {
+  return &#x27;\n\n&#x27;
+    + formatChanges(diffs)
+    + &#x27;\n&#x27;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.levelmeup.generate" id="apidoc.element.levelmeup.generate">
+        function <span class="apidocSignatureSpan">levelmeup.</span>generate
+        <span class="apidocSignatureSpan">(i)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">generate = function (i) {
+  var key = &#x27;level_&#x27; + Date.now().toString(32) + &#x27;_&#x27; + (Math.random() * 1000 | 0)
+  var data = {}
+  while (i-- &#x3e; 0) {
+    data[key + i] = gibberish()
+  }
+  return data
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.levelmeup.gibberish" id="apidoc.element.levelmeup.gibberish">
+        function <span class="apidocSignatureSpan">levelmeup.</span>gibberish
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">gibberish = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.levelmeup.read_db" id="apidoc.element.levelmeup.read_db">
+        function <span class="apidocSignatureSpan">levelmeup.</span>read_db
+        <span class="apidocSignatureSpan">(dir, valueEncoding, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">read_db = function (dir, valueEncoding, callback) {
+  var db = level(dir, { valueEncoding: valueEncoding })
+  var result = {}
+  var stream = db.readStream()
+  var error
+  stream.on(&#x27;data&#x27;, function (entry) {
+    result[entry.key] = entry.value
+  })
+  stream.on(&#x27;error&#x27;, function (err) {
+    error = err
+  })
+  stream.on(&#x27;end&#x27;, function () {
+    db.close(function (err) {
+      callback(error || err, result)
+    })
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.levelmeup.exercise" id="apidoc.module.levelmeup.exercise">module levelmeup.exercise</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.levelmeup.exercise.exercise" id="apidoc.element.levelmeup.exercise.exercise">
+        function <span class="apidocSignatureSpan">levelmeup.</span>exercise
+        <span class="apidocSignatureSpan">(opt)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">exercise = function (opt) {
+  return {
+    problem: {
+      file: path.join(opt.dir, &#x27;problem.{lang}.md&#x27;)
+    },
+    solution: {
+      file: path.join(opt.dir, &#x27;solution.js&#x27;),
+      type: &#x27;js&#x27;
+    },
+    verify: function (args, callback) {
+      var cmd = opt.init()
+      var finish = function (err) {
+        if (err) {
+          callback(null, false, err)
+        }
+        callback(null, true)
+      }
+      exec(cmd, path.join(opt.dir, &#x27;solution.js&#x27;), function (err, data) {
+        if (err) {
+          return finish(&#x27;Error in this workshopper!\n\n```\n&#x27; + err.stack + &#x27;\n```&#x27;)
+        }
+        exec(cmd, path.resolve(process.cwd(), args[0]), function (err, data2) {
+          if (err) {
+            return finish(&#x27;```\n&#x27; + err.stack + &#x27;\n```&#x27;)
+          }
+          var diffs = deepDiff(data, data2)
+          if (diffs === undefined) {
+            return finish()
+          }
+          try {
+            finish(&#x27;{error.not_same}:\n&#x27; + formatDiff(diffs))
+          } catch (e) {
+            console.log(e)
+          }
+        })
+      })
+    },
+    run: function (args, callback) {
+      var cmd = opt.init()
+      exec(cmd, path.resolve(process.cwd(), args[0]), function (err, data) {
+        if (err) {
+          return callback(err, false)
+        }
+        console.log(JSON.stringify(data, null, 2))
+        callback(null, true)
+      })
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.levelmeup.formatDiff" id="apidoc.module.levelmeup.formatDiff">module levelmeup.formatDiff</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.levelmeup.formatDiff.formatDiff" id="apidoc.element.levelmeup.formatDiff.formatDiff">
+        function <span class="apidocSignatureSpan">levelmeup.</span>formatDiff
+        <span class="apidocSignatureSpan">(diffs)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">formatDiff = function (diffs) {
+  return &#x27;\n\n&#x27;
+    + formatChanges(diffs)
+    + &#x27;\n&#x27;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.levelmeup.generate" id="apidoc.module.levelmeup.generate">module levelmeup.generate</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.levelmeup.generate.generate" id="apidoc.element.levelmeup.generate.generate">
+        function <span class="apidocSignatureSpan">levelmeup.</span>generate
+        <span class="apidocSignatureSpan">(i)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">generate = function (i) {
+  var key = &#x27;level_&#x27; + Date.now().toString(32) + &#x27;_&#x27; + (Math.random() * 1000 | 0)
+  var data = {}
+  while (i-- &#x3e; 0) {
+    data[key + i] = gibberish()
+  }
+  return data
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.levelmeup.gibberish" id="apidoc.module.levelmeup.gibberish">module levelmeup.gibberish</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.levelmeup.gibberish.gibberish" id="apidoc.element.levelmeup.gibberish.gibberish">
+        function <span class="apidocSignatureSpan">levelmeup.</span>gibberish
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">gibberish = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.levelmeup.levelmeup" id="apidoc.module.levelmeup.levelmeup">module levelmeup.levelmeup</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.levelmeup.levelmeup.__" id="apidoc.element.levelmeup.levelmeup.__">
+        function <span class="apidocSignatureSpan">levelmeup.levelmeup.</span>__
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">__ = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.levelmeup.levelmeup.__n" id="apidoc.element.levelmeup.levelmeup.__n">
+        function <span class="apidocSignatureSpan">levelmeup.levelmeup.</span>__n
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">__n = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.levelmeup.read_db" id="apidoc.module.levelmeup.read_db">module levelmeup.read_db</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.levelmeup.read_db.read_db" id="apidoc.element.levelmeup.read_db.read_db">
+        function <span class="apidocSignatureSpan">levelmeup.</span>read_db
+        <span class="apidocSignatureSpan">(dir, valueEncoding, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">read_db = function (dir, valueEncoding, callback) {
+  var db = level(dir, { valueEncoding: valueEncoding })
+  var result = {}
+  var stream = db.readStream()
+  var error
+  stream.on(&#x27;data&#x27;, function (entry) {
+    result[entry.key] = entry.value
+  })
+  stream.on(&#x27;error&#x27;, function (err) {
+    error = err
+  })
+  stream.on(&#x27;end&#x27;, function () {
+    db.close(function (err) {
+      callback(error || err, result)
+    })
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
