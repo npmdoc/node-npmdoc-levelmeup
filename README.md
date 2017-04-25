@@ -1,4 +1,7 @@
-# api documentation for  [levelmeup (v1.0.0)](https://github.com/workshopper/levelmeup#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-levelmeup.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-levelmeup) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-levelmeup.svg)](https://travis-ci.org/npmdoc/node-npmdoc-levelmeup)
+# npmdoc-levelmeup
+
+#### basic api documentation for  [levelmeup (v1.0.0)](https://github.com/workshopper/levelmeup#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-levelmeup.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-levelmeup) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-levelmeup.svg)](https://travis-ci.org/npmdoc/node-npmdoc-levelmeup)
+
 #### Level Me Up Scotty! An intro to Node.js databases via a set of self-guided workshops.
 
 [![NPM](https://nodei.co/npm/levelmeup.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/levelmeup)
